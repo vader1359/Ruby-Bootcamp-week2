@@ -1,0 +1,76 @@
+body, html {
+  background-color: #55C9E0;
+  padding: 0px;
+  margin: 0px;
+}
+
+.check_done_button {
+  background-color: red;
+  right: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+.undo_button{
+  background-color: blue;
+  right: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+
+
+.board_title{
+  font-family: sans-serif;
+  font-size: 48px;
+  font-weight: normal;
+  color: white;
+  text-align: center;
+  padding-top: 35px;
+  margin-bottom: 35px
+}
+
+
+.todo {
+  margin-top: 200px;
+  margin-left: 40px;
+  background-color: #D8D8D8;
+  width: 392px;
+  height: 576px;
+  border-radius: 50px;
+}
+
+.list {
+  
+  
+  width: 392px;
+  height: 576px;
+  
+}
+
+.item {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: black;
+  width: 329px; 
+  height: 48px; 
+  position: relative;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.content {
+  left: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%)
+  
+}
+
+button {
+  
+  
+}

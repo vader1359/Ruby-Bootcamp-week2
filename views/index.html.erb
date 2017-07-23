@@ -1,0 +1,49 @@
+<div class="todo">
+  <form class="change_status" action="/change_status" method="post">
+    
+    <form action="change_status" method="post">
+      <div class="list">
+        <h1 class="board_title"><%= todo.list_name %></h1>
+        
+        <% todo.show_all.items.map.with_index do |item, index| %>
+        <div class="item">
+          <% if item.status == true %>
+          <div style="text-decoration:line-through" class="content"><%= item.name %></div>
+          <div class="undo_button">
+            <button type="submit" name="index_changed" value="<%= index %>">Undo</button>
+          </div>
+          <% else %>
+          <div class="content"><%= item.name %></div>
+          <div class="check_done_button">
+            <button type="submit" name="index_changed" value="<%= index %>">Mark DONE</button>
+            
+          </div>
+          <% end%>
+          
+          
+          
+          
+        </div>
+        <% end %>
+      </form>
+      
+      <form action="/sort" method="post">
+        <button type="submit" name="sort_mode" value="done_last">Sort Undone First</button>
+        <button type="submit" name="sort_mode" value="done_first">Sort Done First</button>
+      </form>
+
+      <form action="add_todo" method="post">
+        <button type="submit">Add name</button>
+        <input type="text" name="todo_name">
+      </form>
+
+      <form action="change_list_name" method="post">
+        <button type="submit">Change list name</button>
+        <input type="text" name="list_name">
+      </form>
+
+    
+    
+  </div>
+  
+</div>
