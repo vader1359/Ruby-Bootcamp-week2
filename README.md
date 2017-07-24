@@ -22,5 +22,5 @@ Advanced User Stories:
 - [ ] Instead of Done/Undo, user can click on separate buttons to move an item between list. For example: on each item, clicking on the [Doing] button moves the item to the Doing list and clicking on the [Done] button moves the item to the Done list.
 
 **Walkthrough:**
-<img ![](ruby_week2.gif) />
+![](ruby_week2.gif)
 
